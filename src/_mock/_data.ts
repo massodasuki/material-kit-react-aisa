@@ -32,15 +32,15 @@ export const _users = [...Array(24)].map((_, index) => ({
     [
       'Leader',
       'Hr Manager',
-      'UI Designer',
-      'UX Designer',
-      'UI/UX Designer',
+      'Operation',
+      'Consultant',
+      'Operation',
       'Project Manager',
-      'Backend Developer',
-      'Full Stack Designer',
-      'Front End Developer',
-      'Full Stack Developer',
-    ][index] || 'UI Designer',
+      'Operation',
+      'Consultant',
+      'Consultant',
+      'Consultant',
+    ][index] || 'Operation',
 }));
 
 // ----------------------------------------------------------------------
@@ -141,19 +141,19 @@ export const _tasks = [...Array(5)].map((_, index) => ({
 // ----------------------------------------------------------------------
 
 export const _notifications = [
-  {
-    id: _id(1),
-    title: 'Your order is placed',
-    description: 'waiting for shipping',
-    avatarUrl: null,
-    type: 'order-placed',
-    postedAt: _times(1),
-    isUnRead: true,
-  },
+  // {
+  //   id: _id(1),
+  //   title: 'Your order is placed',
+  //   description: 'waiting for shipping',
+  //   avatarUrl: null,
+  //   type: 'order-placed',
+  //   postedAt: _times(1),
+  //   isUnRead: true,
+  // },
   {
     id: _id(2),
     title: _fullName(2),
-    description: 'answered to your comment on the Minimal',
+    description: 'answered to your comment on the cases',
     avatarUrl: '/assets/images/avatar/avatar-2.webp',
     type: 'friend-interactive',
     postedAt: _times(2),
@@ -176,14 +176,15 @@ export const _notifications = [
     type: 'mail',
     postedAt: _times(4),
     isUnRead: false,
-  },
-  {
-    id: _id(5),
-    title: 'Delivery processing',
-    description: 'Your order is being shipped',
-    avatarUrl: null,
-    type: 'order-shipped',
-    postedAt: _times(5),
-    isUnRead: false,
-  },
+  }
+  // ,
+  // {
+  //   id: _id(5),
+  //   title: 'Delivery processing',
+  //   description: 'Your order is being shipped',
+  //   avatarUrl: null,
+  //   type: 'order-shipped',
+  //   postedAt: _times(5),
+  //   isUnRead: false,
+  // },
 ];
